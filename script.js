@@ -17,18 +17,17 @@ async function cocktailData() {
 async function showElements() {
   try {
     const elements = await cocktailData(); // Obtiene los datos del trago llamando a la función cocktailData
+    console.log(elements);
     div.innerHTML = "";
-
-    const specificElements = elements.drinks[0]; // Accede al array con las propiedades dentro del objeto drinks
 
       // Crea un h2 para el nombre
     const cocktailName = document.createElement("h2");
-    cocktailName.textContent = specificElements.strDrink; // accede a los datos y llama al elemento .strDrink
+    cocktailName.textContent = elements.drinks[0].strDrink;; // accede al nombre dentro del objeto
     div.appendChild(cocktailName);
 
     // Crea un img para la imagen
     const cocktailImage = document.createElement("img");
-    cocktailImage.src = specificElements.strDrinkThumb; // accede a los datos y llama al elemento .strDrinkThumb
+    cocktailImage.src = elements.drinks[0].strDrinkThumb; // accede a la imagen dentro del objeto
     cocktailImage.alt = "Cocktail Image";
     cocktailImage.classList.add("img");
     div.appendChild(cocktailImage);
