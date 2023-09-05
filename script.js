@@ -10,7 +10,7 @@ async function cocktailData() {
   } catch (error) {
     alert(error);
   }
-  return data; 
+  return data;
 }
 
 // Función asincrónica para mostrar los elementos de un trago
@@ -20,9 +20,9 @@ async function showElements() {
     console.log(elements);
     div.innerHTML = "";
 
-      // Crea un h2 para el nombre
+    // Crea un h2 para el nombre
     const cocktailName = document.createElement("h2");
-    cocktailName.textContent = elements.drinks[0].strDrink;; // accede al nombre dentro del objeto
+    cocktailName.textContent = elements.drinks[0].strDrink; // accede al nombre dentro del objeto
     div.appendChild(cocktailName);
 
     // Crea un img para la imagen
