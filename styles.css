@@ -1,0 +1,47 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+	font-family: 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    background-color: lightgray;
+    padding: 10px;
+    font: 3em Georgia;
+}
+
+#button {
+  border: none; 
+  color: white; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  background-color: #f44336;
+}
+
+#button:hover {
+    background: #da190b;
+}
+
+h2 {
+    color: red;
+}
+
+.img {
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: black;
+}
+
+p {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    margin-left: 25%;
+    width: 50%;
+}
+
+a {
+    color: white;
+}
+
