@@ -36,7 +36,7 @@ async function showElements() {
     // Párrafo para el disclaimer
     const pInfo = document.createElement("p");
     pInfo.innerHTML = ` Buscar los ingredientes para crear el trago queda bajo tu responsabilidad. <br>
-    <b> La API utilizada fue <a href="https://www.thecocktaildb.com/">TheCocktailDB</a> </b>`;
+    <b> La API utilizada fue <a href="https://www.thecocktaildb.com/" target="_blank"> TheCocktailDB </a> </b>`;
     div.appendChild(pInfo);
     
   } catch (error) {
